@@ -313,7 +313,9 @@ def nameIt(deformations, forces, M1, phiN1, uN1, gamma1, omega_eff=None,
         plt.legend()
         plt.show()
 
-if __name__ == '__main__':
+
+
+def main():
     # if omega_eff is not given, then will be calculated according to ATC-40.
     omege_eff = None
     M1 = 66.14
@@ -348,6 +350,9 @@ if __name__ == '__main__':
 
     nameIt(displacement, force, M1, phiN1, uN1, gamma1, omega_eff=None,
             T_array=T_array, Sae_array=None, TB=None, structure=struct, plot=True)
+
+if __name__ == '__main__':
+    main()
 
 
 
